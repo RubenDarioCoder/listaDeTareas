@@ -1,0 +1,130 @@
+body { 
+   background-color: #2b2eff;
+   margin: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: 'Merriweather', sans-serif;
+} 
+ 
+h2 {
+   color: #4042b8;
+   margin-bottom: 20px;
+   text-align: center;
+    
+}
+ 
+section {
+   background: rgb(99, 187, 228);
+   padding: 20px;
+   border-radius: 15px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   width: 90%;
+   max-width: 400px;
+    
+}
+ 
+
+ 
+input {
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #90caf9;
+    margin-right: 4rem;
+    flex-grow: 1;
+}
+ 
+#botonAgregarTarea{
+    background-color: #229410;
+    color: #373737;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3 ease;
+ }
+ 
+#botonAgregarTarea:hover {
+    background-color: #31961f;
+}
+ 
+
+#listaProductos {
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+}
+ 
+.productoCreado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #a5d6a7;
+    margin: 10px 0px;
+    background: #10aad1;
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: slideIn 1s ease-out forwards;
+ }
+ 
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+ 
+.productoCreado button {
+    margin-left: 10px;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+ 
+.botonMarcado {
+    background-color: #288b2d;
+    color: white;
+}
+ 
+.botonDesmarcado {
+    background-color: rgba(173, 207, 245, 0.979);
+    color: black;
+}
+ 
+.botonEliminar {
+    background-color: #a00707;
+    color: white;
+}
+ 
+.botonEliminar:hover {
+    background-color: #d80505;
+}
+
+
+.botonSubir,
+.botonBajar {
+    background-color: #190688;
+    color: rgb(250, 234, 6);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.botonSubir:hover,
+.botonBajar:hover {
+    background-color: #1a0f7e;
+}
